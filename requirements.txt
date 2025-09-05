@@ -5,6 +5,8 @@ langchain-experimental
 langchain-google-genai
 pandas
 uvicorn
+fastapi
+
 
 
 

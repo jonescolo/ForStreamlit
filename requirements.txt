@@ -5,7 +5,7 @@ langchain-experimental
 langchain-google-genai
 pandas
 uvicorn
-xlwings
+
 
 
 

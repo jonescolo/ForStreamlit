@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 from langchain.llms import OpenAI
 from langchain_experimental.agents.agent_toolkits.pandas.base import create_pandas_dataframe_agent
+from langchain.agents.agent_types import AgentType
+
 
 # Load Excel file
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx", "csv"])
@@ -19,6 +21,7 @@ if uploaded_file:
     if query:
         response = agent.run(query)
         st.write(response)
+
 
 
 
